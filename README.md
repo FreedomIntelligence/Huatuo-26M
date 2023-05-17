@@ -1,5 +1,12 @@
 # Huatuo-26M
 
+
+
+【[English](README.md)】 【[中文](README_zh-CN.md)】   
+
+
+
+
 ## 👩🏻‍⚕Introduction
 
 Huatuo-26M is the largest Chinese medical Q&A dataset to date. This dataset contains over 26 million high-quality medical Q&A pairs, covering a wide range of topics such as diseases, symptoms, treatments, and drug information. Huatuo-26M serves as a valuable resource for researchers, developers, and companies looking to enhance AI applications in the medical field, such as chatbots, intelligent diagnosis systems, etc.
