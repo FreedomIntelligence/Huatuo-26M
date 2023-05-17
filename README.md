@@ -112,7 +112,7 @@ We welcome and appreciate all contributions! If you find problems in the dataset
 
 ## 📱Contact Us
 
-If you have any questions or need help, please feel free to ask us via email （[anon2010@163.com](mailto:anon2010@163.com)）or in the Issues section.
+If you have any questions or need help, please feel free to ask us via email （[changmiaowang@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）or in the Issues section.
 
 ------
 
