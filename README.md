@@ -1,7 +1,7 @@
 # Huatuo-26M Dataset
 
 
-【[中文](README_zh-CN.md)】 【[English](README.md)】    
+【[English](README_en.md)】    
 
 
 ## 👩🏻‍⚕️项目简介
