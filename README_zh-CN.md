@@ -58,11 +58,11 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 ### 测评
 
 - 检索测评：
-      <details><summary>Click to expand</summary>
+  <details><summary>Click to expand</summary>
       
-      <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
+  <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
       
-      </details>
+  </details>
 
 - 答案生成测评：
 
