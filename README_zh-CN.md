@@ -56,53 +56,54 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 ## 👩🏻‍🔬实验记录
 
 ### 测评
-#### 检索测评：
-<details><summary>Click to expand</summary>
 
-<img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
+- 检索测评：
+      <details><summary>Click to expand</summary>
+      
+      <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
+      
+      </details>
 
-</details>
+- 答案生成测评：
 
-#### 答案生成测评：
-
-<details><summary>Click to expand</summary>
-
-<img src="img/NLG.png" alt="retrieve" style="zoom:100%;" />
-
-</details>
+      <details><summary>Click to expand</summary>
+      
+      <img src="img/NLG.png" alt="retrieve" style="zoom:100%;" />
+      
+      </details>
 
 ### 应用
 
-#### Zero-shot迁移至其他QA数据集：
+- Zero-shot迁移至其他QA数据集：
 
-<details><summary>Click to expand</summary>
-
-<img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
-
-</details>
-
-#### 作为外部知识进行RAG：
-
-<details><summary>Click to expand</summary>
+      <details><summary>Click to expand</summary>
       
-<img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+      <img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
+      
+      </details>
+
+- 作为外部知识进行RAG：
+
+      <details><summary>Click to expand</summary>
+            
+      <img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+      
+      
+      </details>
+
+- 作为医学法学硕士的微调数据：
+
+      <details><summary>Click to expand</summary>
+      <img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
+      
+      </details>
 
 
-</details>
-
-#### 作为医学法学硕士的微调数据：
-
-<details><summary>Click to expand</summary>
-<img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
-
-</details>
-
-
-#### 作为医学LLM的微调数据：
-<details><summary>Click to expand</summary>
-![image-20230517140420680](img/cblue.png)
-
-</details>
+- 作为医学LLM的微调数据：
+      <details><summary>Click to expand</summary>
+      <img src="img/sft.png" alt="retrieve" style="zoom:100%;" />
+      
+      </details>
 
 ## 🚁许可
 
