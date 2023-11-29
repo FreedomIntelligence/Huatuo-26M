@@ -55,35 +55,36 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 ## 👩🏻‍🔬实验记录
 
-
-
-- #### 检索实验：
+### 测评
+#### 检索测评：
 <details><summary>Click to expand</summary>
 
 <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
 
-- #### NLG实验：
+#### 答案生成测评：
 <details><summary>Click to expand</summary>
 
 ![image-20230517135907642](img/NLG.png)
 
 
-
-- #### Zero-shot对比实验：
+### 应用
+#### Zero-shot迁移至其他QA数据集：
 <details><summary>Click to expand</summary>
 
 ![image-20230517140031586](img/zero-shot.png)
 
-- #### RAG实验：
+#### 作为外部知识进行RAG：
 
 <details><summary>Click to expand</summary>
 ![image-20230517140124397](img/rag.png)
 
-- #### CBLUE实验：
+#### 作为医学法学硕士的微调数据：
 <details><summary>Click to expand</summary>
 ![image-20230517140420680](img/cblue.png)
 
-
+#### 作为医学LLM的微调数据：
+<details><summary>Click to expand</summary>
+![image-20230517140420680](img/cblue.png)
 
 
 
@@ -101,7 +102,7 @@ Huatuo-26M 数据集遵循 Apache 2.0 许可。使用前请确保你已阅读并
 
 ## 📱联系我们
 
-如果你有任何问题或者需要帮助，欢迎通过电子邮件（[changmiaowang@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）或者在 Issues 区向我们提问。
+如果你有任何问题或者需要帮助，欢迎通过电子邮件（[wangxidong1@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）或者在 Issues 区向我们提问。
 
 ------
 
