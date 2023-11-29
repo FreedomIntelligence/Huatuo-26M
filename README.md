@@ -46,6 +46,8 @@ knowledge_graph_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_know
 encyclopedia_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_encyclopedia_qa')
 # part 3 (only url)
 consultation_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_consultation_qa')
+# Huatuo-Lite
+Huatuo-Lite = load_dataset("FreedomIntelligence/Huatuo26M-Lite")
 
 # testdatasets (6k)
 huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testdatasets')
