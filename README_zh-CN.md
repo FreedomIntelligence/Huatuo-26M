@@ -67,7 +67,7 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 <details><summary>Click to expand</summary>
 
-![image-20230517135907642](img/NLG.png)
+<img src="img/NLG.png" alt="retrieve" style="zoom:100%;" />
 
 </details>
 
@@ -77,20 +77,24 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 <details><summary>Click to expand</summary>
 
-![image-20230517140031586](img/zero-shot.png)
+<img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
 
 </details>
 
 #### 作为外部知识进行RAG：
 
 <details><summary>Click to expand</summary>
-![image-20230517140124397](img/rag.png)
+      
+<img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+
+
 </details>
 
 #### 作为医学法学硕士的微调数据：
 
 <details><summary>Click to expand</summary>
-![image-20230517140420680](img/cblue.png)
+
+      ![image-20230517140420680](img/cblue.png)
 
 </details>
 
