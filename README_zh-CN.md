@@ -1,49 +1,36 @@
-# Huatuo-26M
+# Huatuo-26M Dataset
 
 
-【[English](README.md)】 【[中文](README_zh-CN.md)】   
+【[中文](README_zh-CN.md)】 【[English](README.md)】    
 
 
 ## 👩🏻‍⚕️项目简介
 
-Huatuo-26M 是目前为止最大的中文医疗问答数据集。此数据集包含了超过2600万个高质量的医疗问答对，涵盖了各种疾病、症状、治疗方式、药品信息等多个方面。Huatuo-26M 是研究人员、开发者和企业为了提高医疗领域的人工智能应用，如聊天机器人、智能诊断系统等，而需要的重要资源。
-
+- Huatuo-26M 是目前为止最大的中文医疗问答数据集。此数据集包含了超过2600万个高质量的医疗问答对，涵盖了各种疾病、症状、治疗方式、药品信息等多个方面。
+- Huatuo-Lite 是在Huatuo26M数据集的基础上经过多次提纯和重写而精炼优化的数据集。它具有更多的数据维度和更高的数据质量。
 
 
 ## 📚数据内容
 
-Huatuo-26M 数据集是由多个来源收集和整合而成，主要包括：
+Huatuo-26M 数据集主要包括：
 
 - 在线医疗百科 [huatuo_encyclopedia_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa)
 - 医疗知识图谱 [huatuo_knowledge_graph_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa)
-- 网络上的公开医疗问答论坛（答案为url形式） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa) 
-
-
-
-ps: 因为某些原因，数据占比最大的公开医疗问答论坛我们暂时无法公开text格式的数据
-
+- 网络上的公开医疗问答论坛（答案为url形式） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa)
+- 精简版本Huatuo-Lite [Huatuo-Lite](https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite)
 
 
 数据集中的每个问答对包含以下字段：
 
 - Question：问题描述 
 - Answer：医生/专家的答案
+- Huatuo-Lite 数据集还具有**医院科室**和**相关疾病**字段
 
 
 
 以下为我们在论文中使用的huatuo测试集，由多个来源中数据随机抽取组成。
 
 - Testdatasets：[huatuo26M-testdatasets](https://huggingface.co/datasets/FreedomIntelligence/huatuo26M-testdatasets)
-
-
-
-## 🤖数据使用
-
-Huatuo-26M 数据集可用于多种医疗领域的人工智能研究和应用，如：
-
-- 自然语言处理：包括但不限于问答系统、文本分类、情感分析等。
-- 机器学习模型训练：如预测疾病、个性化治疗推荐等。
-- 人工智能在医疗领域的应用：如智能诊断系统、医疗咨询聊天机器人等。
 
 
 
@@ -71,31 +58,29 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 
 - #### 检索实验：
+<details><summary>Click to expand</summary>
 
 <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
 
 - #### NLG实验：
-
-
+<details><summary>Click to expand</summary>
 
 ![image-20230517135907642](img/NLG.png)
 
 
 
 - #### Zero-shot对比实验：
+<details><summary>Click to expand</summary>
 
 ![image-20230517140031586](img/zero-shot.png)
 
 - #### RAG实验：
 
+<details><summary>Click to expand</summary>
 ![image-20230517140124397](img/rag.png)
 
-
-
 - #### CBLUE实验：
-
-#### 
-
+<details><summary>Click to expand</summary>
 ![image-20230517140420680](img/cblue.png)
 
 
@@ -119,8 +104,6 @@ Huatuo-26M 数据集遵循 Apache 2.0 许可。使用前请确保你已阅读并
 如果你有任何问题或者需要帮助，欢迎通过电子邮件（[changmiaowang@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）或者在 Issues 区向我们提问。
 
 ------
-
-该项目以中国古代著名医学家华佗的名字命名，反映了我们致力于推动医学知识和技术进步的发心。
 
 
 
