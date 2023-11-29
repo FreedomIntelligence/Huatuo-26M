@@ -1,15 +1,10 @@
-# Huatuo-26M
-
-
-
-【[English](README.md)】 【[中文](README_zh-CN.md)】   
-
-
+# Huatuo-26M 
 
 
 ## 👩🏻‍⚕Introduction
 
-Huatuo-26M is the largest Chinese medical Q&A dataset to date. This dataset contains over 26 million high-quality medical Q&A pairs, covering a wide range of topics such as diseases, symptoms, treatments, and drug information. Huatuo-26M serves as a valuable resource for researchers, developers, and companies looking to enhance AI applications in the medical field, such as chatbots, intelligent diagnosis systems, etc.
+- Huatuo-26M is currently the largest Chinese medical question-and-answer dataset. This dataset contains over 26 million high-quality medical Q&A pairs, covering various aspects such as diseases, symptoms, treatment methods, and drug information.
+- Huatuo-Lite is a refined and optimized dataset based on Huatuo-26M, having undergone multiple purifications and rewrites. It features more data dimensions and higher data quality.
 
 
 ## 📚Data Content
@@ -18,19 +13,15 @@ The Huatuo-26M dataset is collected and integrated from multiple sources, includ
 
 - Online Medical Encyclopedia [huatuo_encyclopedia_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa)
 - Online Medical Knowledge Bases [huatuo_knowledge_graph_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa)
-- Online Medical Consultation Records（answer in the form of URLs） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa) 
-
-
-
-ps: Due to some reasons, we are currently unable to publicly release the text format data from the Online Medical Consultation Records, which constitutes the largest proportion of the Huatuo-26M dataset.
-
+- Online Medical Consultation Records（answer in the form of URLs） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa)
+- Streamlined version [Huatuo-Lite](https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite)
 
 
 Each question-answer pair in the dataset contains the following fields：
 
 - questions：Problem Description 
 - answers：Doctor/Expert Answers
-
+- Huatuo-Lite dataset also includes **Hospital Department** and **Related Diseases** fields
 
 
 The following is the huatuo test set we used in the paper, which consists of random sampling of data from multiple sources.
@@ -46,7 +37,6 @@ The Huatuo-26M dataset can be used for a variety of AI research and applications
 - Natural Language Processing: Including but not limited to Q&A systems, text classification, sentiment analysis, etc.
 - Machine Learning model training: Such as disease prediction, personalized treatment recommendation, etc.
 - AI applications in the medical field: Such as intelligent diagnosis systems, medical consultation chatbots, etc.
-
 
 
 ## 🚀Quick Start
@@ -70,31 +60,48 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 ## 👩🏻‍🔬Experiment Record
 
+### Benchmark
+
+- Retrieval Evaluation:
+
+  <details><summary>Click to expand</summary>
+  <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
+  </details>
+
+- Answer Generation Evaluation:
+
+  <details><summary>Click to expand</summary>
+  <img src="img/NLG.png" alt="retrieve" style="zoom:100%;" />
+  </details>
+
+### Application
+
+- Zero-shot transfer to other QA datasets:
+
+<details><summary>Click to expand</summary>
+<img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
+ </details>
+
+ 
+- As external knowledge for RAG:
+
+<details><summary>Click to expand</summary>
+<img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+</details>
 
 
-- #### Retrieve：
+- As fine-tuning data for Master of Medical Jurisprudence:
+
+<details><summary>Click to expand</summary>
+<img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
+</details>
 
 
-![image-20230517135907642](img/retrieve.png)
+- As fine-tuning data for Medical LLM:
 
-- #### NLG：
-
-![image-20230517135907642](img/NLG.png)
-
-
-- #### Zero-shot：
-
-![image-20230517140031586](img/zero-shot.png)
-
-- #### RAG：
-
-![image-20230517140124397](img/rag.png)
-
-
-- #### CBLUE：
-
-
-![image-20230517140420680](img/cblue.png)
+<details><summary>Click to expand</summary>
+<img src="img/sft.png" alt "retrieve" style="zoom:100%;" />
+</details>
 
 
 
@@ -103,20 +110,11 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 The Huatuo-26M dataset is licensed under Apache 2.0. Please make sure you have read and agreed to the license terms before using it.
 
 
-
-## 👷🏻‍Contribution
-
-We welcome and appreciate all contributions! If you find problems in the dataset or have new ideas and suggestions, please feel free to communicate with us through Issues or Pull Requests.
-
-
-
 ## 📱Contact Us
 
-If you have any questions or need help, please feel free to ask us via email （[changmiaowang@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）or in the Issues section.
+If you have any questions or need help, please feel free to ask us via email （[xidongw@163.com](mailto:xidongw@163.com)）or in the Issues section.
 
 ------
-
-The project is named after Hua Tuo, a famous physician in ancient China, reflecting our dedication to the advancement of medical knowledge and technology.
 
 
 
