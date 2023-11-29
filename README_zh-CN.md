@@ -93,8 +93,7 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 #### 作为医学法学硕士的微调数据：
 
 <details><summary>Click to expand</summary>
-
-      ![image-20230517140420680](img/cblue.png)
+<img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
 
 </details>
 
