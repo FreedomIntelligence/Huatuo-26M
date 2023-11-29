@@ -111,12 +111,6 @@ Huatuo-26M 数据集遵循 Apache 2.0 许可。使用前请确保你已阅读并
 
 
 
-## 👷🏻‍♂️贡献
-
-我们欢迎并感谢所有的贡献！如果你发现数据集中的问题，或者有新的想法和建议，欢迎通过 Issues 或者 Pull Requests 与我们交流。
-
-
-
 ## 📱联系我们
 
 如果你有任何问题或者需要帮助，欢迎通过电子邮件（[changmiaowang@cuhk.edu.cn](mailto:changmiaowang@cuhk.edu.cn)）或者在 Issues 区向我们提问。
