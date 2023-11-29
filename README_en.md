@@ -78,30 +78,30 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 - Zero-shot transfer to other QA datasets:
 
-<details><summary>Click to expand</summary>
-<img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
- </details>
+  <details><summary>Click to expand</summary>
+  <img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
+  </details>
 
  
 - As external knowledge for RAG:
 
-<details><summary>Click to expand</summary>
-<img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
-</details>
+  <details><summary>Click to expand</summary>
+  <img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+  </details>
 
 
 - As fine-tuning data for Master of Medical Jurisprudence:
 
-<details><summary>Click to expand</summary>
-<img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
-</details>
+  <details><summary>Click to expand</summary>
+  <img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
+  </details>
 
 
 - As fine-tuning data for Medical LLM:
 
-<details><summary>Click to expand</summary>
-<img src="img/sft.png" alt "retrieve" style="zoom:100%;" />
-</details>
+  <details><summary>Click to expand</summary>
+  <img src="img/sft.png" alt "retrieve" style="zoom:100%;" />
+  </details>
 
 
 
