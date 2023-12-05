@@ -90,7 +90,7 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
   </details>
 
 
-- As fine-tuning data for Master of Medical Jurisprudence:
+- As pre-training data for language model (LM):
 
   <details><summary>Click to expand</summary>
   <img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
