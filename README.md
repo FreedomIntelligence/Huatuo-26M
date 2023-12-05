@@ -101,7 +101,7 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
   </details>
 
 
-- 作为医学LLM的微调数据：
+- 作为医学大语言模型(LLM)的微调数据：
   <details><summary>Click to expand</summary>
   <img src="img/sft.png" alt="retrieve" style="zoom:100%;" />
       
