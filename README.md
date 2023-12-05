@@ -1,5 +1,10 @@
 # Huatuo-26M Dataset
-📃 <a href="https://arxiv.org/abs/2305.01526" target="_blank">Paper</a> • [[English_version](README_en.md)]    
+
+
+<p align="center">
+   📃 <a href="https://arxiv.org/abs/2305.01526" target="_blank">Paper</a> 
+   <br>  <a href="README.md">   中文</a> | <a href="README_en.md"> English
+</p>
 
 
 ## 👩🏻‍⚕️项目简介
