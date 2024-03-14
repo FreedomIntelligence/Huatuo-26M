@@ -1,45 +1,51 @@
-# Huatuo-26M Dataset
-
+# Huatuo-26M 
 
 <p align="center">
    📃 <a href="https://arxiv.org/abs/2305.01526" target="_blank">Paper</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite" target="_blank">Huatuo-Lite</a> • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa" target="_blank">huatuo_encyclopedia_qa</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa" target="_blank">knowledge_graph_qa</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa" target="_blank">huatuo_consultation_qa</a>  
    <br>  <a href="README.md">   中文</a> | <a href="README_en.md"> English
 </p>
 
+## 👩🏻‍⚕Introduction
 
-## 👩🏻‍⚕️项目简介
-
-- Huatuo-26M 是目前为止最大的中文医疗问答数据集。此数据集包含了超过2600万个高质量的医疗问答对，涵盖了各种疾病、症状、治疗方式、药品信息等多个方面。
-- Huatuo-Lite 是在Huatuo26M数据集的基础上经过多次提纯和重写而精炼优化的数据集。它包含了18万个高质量的医疗问答对，并具有**医院科室**和**相关疾病**两个额外的数据维度。
-
-
-## 📚数据内容
-
-Huatuo-26M 数据集主要包括：
-
-- 在线医疗百科 [huatuo_encyclopedia_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa)
-- 医疗知识图谱 [huatuo_knowledge_graph_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa)
-- 网络上的公开医疗问答论坛（答案为url形式） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa)
-- 精简版本Huatuo-Lite [Huatuo-Lite](https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite)
+- Huatuo-26M is currently the largest Chinese medical question-and-answer dataset. This dataset contains over 26 million high-quality medical Q&A pairs, covering various aspects such as diseases, symptoms, treatment methods, and drug information.
+- Huatuo-Lite is a refined and optimized dataset based on Huatuo-26M, having undergone multiple purifications and rewrites. It features more data dimensions and higher data quality.
 
 
-数据集中的每个问答对包含以下字段：
+## 📚Data Content
 
-- Question：问题描述 
-- Answer：医生/专家的答案
-- Huatuo-Lite 数据集还具有**医院科室**和**相关疾病**字段
+The Huatuo-26M dataset is collected and integrated from multiple sources, including:
+
+- Online Medical Encyclopedia [huatuo_encyclopedia_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa)
+- Online Medical Knowledge Bases [huatuo_knowledge_graph_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa)
+- Online Medical Consultation Records（answer in the form of URLs） [huatuo_consultation_qa](https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa)
+- Streamlined version [Huatuo-Lite](https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite)
 
 
+Each question-answer pair in the dataset contains the following fields：
 
-以下为我们在论文中使用的huatuo测试集，由多个来源中数据随机抽取组成。
+- questions：Problem Description 
+- answers：Doctor/Expert Answers
+- Huatuo-Lite dataset also includes **Hospital Department** and **Related Diseases** fields
+
+
+The following is the huatuo test set we used in the paper, which consists of random sampling of data from multiple sources.
 
 - Testdatasets：[huatuo26M-testdatasets](https://huggingface.co/datasets/FreedomIntelligence/huatuo26M-testdatasets)
 
 
 
-## 🚀快速开始
+## 🤖Data Usage
 
-为了开始使用 Huatuo-26M 数据集，你可以按照以下步骤操作：
+The Huatuo-26M dataset can be used for a variety of AI research and applications in the medical field, such as:
+
+- Natural Language Processing: Including but not limited to Q&A systems, text classification, sentiment analysis, etc.
+- Machine Learning model training: Such as disease prediction, personalized treatment recommendation, etc.
+- AI applications in the medical field: Such as intelligent diagnosis systems, medical consultation chatbots, etc.
+
+
+## 🚀Quick Start
+
+To start using the Huatuo-26M dataset, you can follow the steps below:
 
 ```python
 import datasets
@@ -49,8 +55,6 @@ knowledge_graph_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_know
 encyclopedia_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_encyclopedia_qa')
 # part 3 (only url)
 consultation_dataset = datasets.load_dataset('FreedomIntelligence/huatuo_consultation_qa')
-# Huatuo-Lite
-lite = load_dataset("FreedomIntelligence/Huatuo26M-Lite")
 
 # testdatasets (6k)
 huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testdatasets')
@@ -58,73 +62,67 @@ huatuo_testdatasets = datasets.load_dataset('FreedomIntelligence/huatuo26M-testd
 
 
 
-## 👩🏻‍🔬实验记录
+## 👩🏻‍🔬Experiment Record
 
-### 测评
+### Benchmark
 
-- 检索测评：
+- Retrieval Evaluation:
+
   <details><summary>Click to expand</summary>
-      
   <img src="img/retrieve.png" alt="retrieve" style="zoom:100%;" />
-      
   </details>
 
-- 答案生成测评：
+- Answer Generation Evaluation:
 
   <details><summary>Click to expand</summary>
-      
   <img src="img/NLG.png" alt="retrieve" style="zoom:100%;" />
-      
   </details>
 
-### 应用
+### Application
 
-- Zero-shot迁移至其他QA数据集：
+- Zero-shot transfer to other QA datasets:
 
   <details><summary>Click to expand</summary>
-      
   <img src="img/zero-shot.png" alt="retrieve" style="zoom:100%;" />
-      
-   </details>
-
-- 作为外部知识进行RAG：
-
-  <details><summary>Click to expand</summary>
-            
-  <img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
-      
-      
   </details>
 
-- 作为语言模型(LM)的预训练数据：
+
+- As external knowledge for RAG:
+
+  <details><summary>Click to expand</summary>
+  <img src="img/rag.png" alt="retrieve" style="zoom:100%;" />
+  </details>
+
+
+- As pre-training data for language model (LM):
 
   <details><summary>Click to expand</summary>
   <img src="img/cblue.png" alt="retrieve" style="zoom:100%;" />
-      
   </details>
 
 
-- 作为医学大语言模型(LLM)的微调数据：
+- As fine-tuning data for Medical LLM:
+
   <details><summary>Click to expand</summary>
-  <img src="img/sft.png" alt="retrieve" style="zoom:100%;" />
-      
+  <img src="img/sft.png" alt "retrieve" style="zoom:100%;" />
   </details>
 
-## 🚁许可
-
-Huatuo-26M 数据集遵循 Apache 2.0 许可。使用前请确保你已阅读并同意许可条款。
 
 
+## 🚁License
 
-## 📱联系我们
+The Huatuo-26M dataset is licensed under Apache 2.0. Please make sure you have read and agreed to the license terms before using it.
 
-如果你有任何问题或者需要帮助，欢迎通过电子邮件（[xidongw@163.com](mailto:xidongw@163.com)）或者在 Issues 区向我们提问。
+
+## 📱Contact Us
+
+If you have any questions or need help, please feel free to ask us via email （[xidongw@163.com](mailto:xidongw@163.com)）or in the Issues section.
 
 ------
 
 
 
-## 😁引用
+## 😁Citation
 
 ```
 @misc{li2023huatuo26m,
