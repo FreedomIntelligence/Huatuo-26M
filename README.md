@@ -2,7 +2,7 @@
 
 <p align="center">
    📃 <a href="https://arxiv.org/abs/2305.01526" target="_blank">Paper</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/Huatuo26M-Lite" target="_blank">Huatuo-Lite</a> • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_encyclopedia_qa" target="_blank">huatuo_encyclopedia_qa</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_knowledge_graph_qa" target="_blank">knowledge_graph_qa</a>  • 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/huatuo_consultation_qa" target="_blank">huatuo_consultation_qa</a>  
-   <br>  <a href="README.md">   中文</a> | <a href="README_en.md"> English
+   <br>  <a href="README_zh.md">   中文</a> | <a href="README.md"> English
 </p>
 
 ## 👩🏻‍⚕Introduction
